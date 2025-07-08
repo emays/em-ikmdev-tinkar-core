@@ -158,6 +158,13 @@ public sealed interface LogicalAxiom permits LogicalAxiom.Atom, LogicalAxiom.Def
                 return LogicalAxiomSemantic.DATA_PROPERTY_SET;
             }
         }
+        
+        
+        sealed interface TemporalPropertySet extends LogicalSet permits LogicalAxiomAdaptor.TemporalPropertySetAdaptor {
+            default LogicalAxiomSemantic axiomSemantic() {
+                return LogicalAxiomSemantic.TEMPORAL_PROPERTY_SET;
+            }
+        }
 
         sealed interface InclusionSet extends LogicalSet permits LogicalAxiomAdaptor.InclusionSetAdaptor {
             default LogicalAxiomSemantic axiomSemantic() {

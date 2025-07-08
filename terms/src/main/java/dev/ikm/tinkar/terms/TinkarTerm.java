@@ -6882,6 +6882,7 @@ public class TinkarTerm {
     public static final EntityProxy.Concept PROPERTY_SEQUENCE_IMPLICATION =
             EntityProxy.Concept.make("Property sequence implication (SOLOR)", UUID.fromString("9a47a5db-42a6-49ee-9083-54bc305a9456"));
 
+    public static final EntityProxy.Concept TEMPORAL_PROPERTY_SET = STRING_1;
 
     /**
      * ConceptProxy for: "Tinkar root concept".
